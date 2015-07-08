@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>小朴应收款管理系统</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<link rel="stylesheet" href="css/leh5.css">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+
+<script>
+$(function(){
+	
+	$('#dowebok').fullpage({
+		sectionsColor: ['#d4d4d4', '#000000', '#000000', '#000000', '#373737'],
+		loopBottom: true,
+		afterLoad: function(anchorLink, index){
+			if(index == 1){
+					dispinti01();dispinti02();dispinti03();dispinti04();dispinti05();
+					document.getElementById("pg1_id1").className = "pg1_sansuibak";
+					document.getElementById("pg1_id2").className = "pg1_bird";
+					document.getElementById("pg1_id3").className = "pg1_biaoyu";
+					document.getElementById("pg1_id4").className = "pg1_kh";
+					document.getElementById("pg1_id5").className = "pg1_logo";
+					document.getElementById("pg1_id6").className = "pg1_cpy";
+					document.getElementById("pg1_id7").className = "pg1_arrow";		
+			}
+			if(index == 2){
+					dispinti01();dispinti02();dispinti03();dispinti04();dispinti05();
+					document.getElementById("pg2_id1").className = "pg2_imgbak";
+					document.getElementById("pg2_id2").className = "pg2_title1";
+					document.getElementById("pg2_id3").className = "pg2_title2";
+					document.getElementById("pg2_id4").className = "pg2_button";
+					document.getElementById("pg2_id5").className = "pg2_title3";
+					document.getElementById("pg2_id6").className = "pg2_box";
+					document.getElementById("pg2_id7").className = "pg2_box2";
+					document.getElementById("pg2_id8").className = "pg2_box3";	
+					document.getElementById("pg2_id9").className = "pg2_cpy";
+					document.getElementById("pg2_id10").className = "pg2_arrow";	
+			}
+			if(index == 3){
+					dispinti01();dispinti02();dispinti03();dispinti04();dispinti05();
+					document.getElementById("pg3_id1").className = "pg3_imgbak";
+					document.getElementById("pg3_id2").className = "pg3_title1";
+					document.getElementById("pg3_id3").className = "pg3_title2";
+					document.getElementById("pg3_id4").className = "pg3_title3";
+					document.getElementById("pg3_id5").className = "pg3_title4";
+					document.getElementById("pg3_id6").className = "pg3_cpy";
+					document.getElementById("pg3_id7").className = "pg3_arrow";	
+			}
+			if(index == 4){
+					dispinti01();dispinti02();dispinti03();dispinti04();dispinti05();
+					document.getElementById("pg4_id1").className = "pg4_imgbak";
+					document.getElementById("pg4_id2").className = "pg4_title1";
+					document.getElementById("pg4_id3").className = "pg4_title2";
+					document.getElementById("pg4_id4").className = "pg4_title3";
+					document.getElementById("pg4_id5").className = "pgboxall_midel";
+					document.getElementById("pg4_id6").className = "pg4_cpy";
+					document.getElementById("pg4_id7").className = "pg4_arrow";
+			}
+			if(index == 5){
+					dispinti01();dispinti02();dispinti03();dispinti04();dispinti05();
+					document.getElementById("pg5_id1").className = "pg5_title1";
+					document.getElementById("pg5_id2").className = "pg5_title2";
+					document.getElementById("pg5_id3").className = "pg5_title3";
+					document.getElementById("pg5_id4").className = "pg5_mapsv";
+					document.getElementById("pg5_id5").className = "pg5_cpy";
+			}
+		},
+		onLeave: function(index, direction){
+			dispinti01();dispinti02();dispinti03();dispinti04();dispinti05();
+		}
+	});
+});
+
+function dispinti01()
+{
+document.getElementById("pg1_id2").className = "inti_divcss";document.getElementById("pg1_id3").className = "pg1_biaoyu";document.getElementById("pg1_id4").className = "inti_divcss";document.getElementById("pg1_id5").className = "inti_divcss";document.getElementById("pg1_id6").className = "inti_divcss";document.getElementById("pg1_id7").className = "pg1_arrow";	
+}
+function dispinti02()
+{
+document.getElementById("pg2_id2").className = "inti_divcss";document.getElementById("pg2_id3").className = "inti_divcss";document.getElementById("pg2_id4").className = "inti_divcss";document.getElementById("pg2_id5").className = "inti_divcss";document.getElementById("pg2_id6").className = "inti_divcss";document.getElementById("pg2_id7").className = "inti_divcss";document.getElementById("pg2_id8").className = "inti_divcss";document.getElementById("pg2_id9").className = "inti_divcss";document.getElementById("pg2_id10").className = "inti_divcss";
+}
+function dispinti03()
+{
+document.getElementById("pg3_id2").className = "inti_divcss";document.getElementById("pg3_id3").className = "inti_divcss";document.getElementById("pg3_id4").className = "inti_divcss";document.getElementById("pg3_id5").className = "inti_divcss";document.getElementById("pg3_id6").className = "inti_divcss";document.getElementById("pg3_id7").className = "inti_divcss";	
+}
+function dispinti04()
+{					
+document.getElementById("pg4_id2").className = "inti_divcss";document.getElementById("pg4_id3").className = "inti_divcss";document.getElementById("pg4_id4").className = "inti_divcss";document.getElementById("pg4_id5").className = "inti_divcss";document.getElementById("pg4_id6").className = "inti_divcss";document.getElementById("pg4_id7").className = "inti_divcss";
+}					
+function dispinti05()
+{
+document.getElementById("pg5_id1").className = "inti_divcss";document.getElementById("pg5_id2").className = "inti_divcss";document.getElementById("pg5_id3").className = "inti_divcss";document.getElementById("pg5_id4").className = "inti_divcss";document.getElementById("pg5_id5").className = "inti_divcss";
+}
+</script>
+
+</head>
+
+<body>
+
+<div id="dowebok">
+	<div class="section section1">
+		<div class="pgboxall">
+			<div id="pg1_id1" class="pg1_sansuibak"></div>
+			<div id="pg1_id2" class="pg1_bird"><img src="images/pg1_birds.png"></div>
+			<div id="pg1_id3" class="pg1_biaoyu"><img src="images/pg1_biaoyu.png"></div>
+			<div id="pg1_id4" class="pg1_kh">致力于法律服务产品化,重新定义法律产品</div>
+			<div id="pg1_id5" class="pg1_logo"><img src="images/pg1_title.png"></div>
+			<div id="pg1_id6" class="pg1_cpy">杭州小朴科技有限公司</div>
+			<div id="pg1_id7" class="pg1_arrow"><a href="javascript:$('#dowebok').fullpage.moveSectionDown();" ><img src="images/pg1_arrow.png"></a></div>
+		</div>
+	</div>
+	<div class="section section2">
+		<div id="pg2_id1" class="pg2_imgbak"></div>
+		<div class="slide">
+		<div class="pgboxall" >
+			
+			<div class="cont_page1">
+				<div id="pg2_id2" class="pg2_title1">小朴<span>•良品</span></div>
+				<div id="pg2_id3" class="pg2_title2">小朴“<span>催收宝</span>”<br>让天下再没难管的应收款</div>
+				<div id="pg2_id4" class="pg2_button">
+					<ul>
+					<li class="pg2_bt_l"><a href="">点击试用</a></li>
+					<li class="pg2_bt_r"><a href="javascript:$('#dowebok').fullpage.moveSlideRight();" >申请账号</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="slide">
+		<div class="pgboxall" >
+			<div class="cont_page2">
+				
+				<div id="pg2_id5" class="pg2_title3"><span>账号申请</span></div>			
+				<div id="pg2_id6" class="pg2_box">
+					<div class="pg2_box_bd"></div>
+				</div>
+				<div id="pg2_id7" class="pg2_box2">
+					<div class="pg2_box_main">
+					</div>
+				</div>			
+				<div id="pg2_id8"  class="pg2_box3">
+					<div class="pg2_box_form">
+					<form>
+						<ul>
+						<li><span>用 户 名：</span>
+						  <input type="text" name="usname" /></li>
+						<li><span>昵　　称：</span><input type="text" name="usedname" /></li>
+						<li><span>登录密码：</span><input type="password" name="psword" /></li>
+						<li><span>确认密码：</span><input type="password" name="confpsword" /></li>
+						<li><span>邮　　箱：</span><input type="text" name="email" /></li>
+						<li><span>操作身份：</span><input type="text" name="identity" /></li>
+						<li><span>联系电话：</span><input type="text" name="phone" /></li>
+						<li><span>所在部门：</span><input type="text" name="department" /></li>
+						<li><span>所属公司：</span><input name="company" type="text" /></li>
+						<li><span>联系电址：</span><input name="address" type="text" /></li>
+						</ul>			
+					<div class="pg2_box_but"><a>填写完了，现在提交</a><div class="pg2_box_butdot"></div></div>
+					</form>
+					</div>
+				</div>								
+				
+			</div>				
+		</div>
+		</div>
+		<div id="pg2_id9" class="pg2_cpy">杭州小朴科技有限公司</div>
+		<div id="pg2_id10" class="pg2_arrow"><a href="javascript:$('#dowebok').fullpage.moveSectionDown();" ><img src="images/pg2_arrow.png"></a></div>
+	</div>
+	<div class="section section3">
+		<div class="pgboxall">
+			<div id="pg3_id1" class="pg3_imgbak"></div>
+			<div id="pg3_id2" class="pg3_title1">小朴<span>•战队</span></div>
+			<div id="pg3_id3" class="pg3_title2">懂商业<span>•</span>懂法律<span>•</span>董技术</div>
+			<div id="pg3_id4" class="pg3_title3">跨界联合　 多重人才</div>
+			<div id="pg3_id5" class="pg3_title4">我们重新定义团队</div>
+			<div id="pg3_id6" class="pg3_cpy">杭州小朴科技有限公司</div>
+			<div id="pg3_id7" class="pg3_arrow"><a href="javascript:$('#dowebok').fullpage.moveSectionDown();" ><img src="images/pg2_arrow.png"></a></div>
+		</div>
+	</div>
+	<div class="section section4">
+		<div class="pgboxall">
+			<div id="pg4_id1" class="pg4_imgbak"></div>
+			<div id="pg4_id2" class="pg4_title1">小朴<span>•机遇</span></div>
+			<div id="pg4_id3" class="pg4_title2">诚招Java/PHP/python攻城狮 ——<br />
+				会Java/PHP/python（任选其一，多多益善），<br />
+				搞过数据挖掘，数据库优化，极致代码控，<br />
+				有项目管理经验优先。<br />
+			</div>
+			<div id="pg4_id4" class="pg4_title3"><span>如果</span>，你想做一个<span>单纯的码农</span> <br />
+				我们希望能让你衣食无忧 <br />
+				<span>如果</span>，你有一个<span>律师梦</span> <br />
+				我们帮你实现 <br />
+			</div>
+			<div id="pg4_id5" class="pgboxall_midel"></div>
+			<div id="pg4_id6" class="pg4_cpy">杭州小朴科技有限公司</div>
+			<div id="pg4_id7" class="pg4_arrow"><a href="javascript:$('#dowebok').fullpage.moveSectionDown();" ><img src="images/pg2_arrow.png"></a></div>
+			<div class="pgboxall_end"></div>
+		</div>
+	</div>
+	<div class="section section5">
+		<div class="pgboxall">		
+			<div id="pg5_id1" class="pg5_title1">小朴<span>•我们</span></div>		
+			<div id="pg5_id2" class="pg5_title2">
+				杭州小朴科技有限公司致力于打造简单易用的商用法律产品。我们希望通过自己的<br />努力和创新，以法律人、商业人的视角，开发出更多突破性产品，引领法律服务行业革新。
+			</div>
+			<div id="pg5_id3" class="pg5_title3">
+				<ul>
+				<li class="pg5_dot01">合作联系：wdh@xiaopust.com</li>
+				<li class="pg5_dot02">简历投递：linyao@xiaopust.com</li>
+				</ul>
+			</div>
+			<div id="pg5_id4" class="pg5_mapsv"></div>
+			<div id="pg5_id5" class="pg5_cpy">杭州小朴科技有限公司</div>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>
